@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: studiovange_development
+
+production:
+  <<: *default
+  database: studiovange_production
+  username: studiovange
+  password: studiovange
