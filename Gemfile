@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'angularjs-rails'
+gem 'angularjs-rails', '~> 1.3.15'
 gem 'angular-rails-templates'
 gem 'enumerize'
 gem 'puma'
