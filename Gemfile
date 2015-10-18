@@ -14,6 +14,7 @@ gem 'angularjs-rails'
 gem 'angular-rails-templates'
 gem 'enumerize'
 gem 'puma'
+gem 'bourbon'
 
 group :development, :test do
   gem 'byebug'

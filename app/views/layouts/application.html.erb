@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Studiovange</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>StudioVange</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-app="studioVangeApp">
 
-<%= yield %>
+    <%= render 'layouts/partials/header' %>
+
+    <div ng-view class="sv_main_view" ></div>
+
+    <%= render 'layouts/partials/footer' %>
 
 </body>
 </html>
